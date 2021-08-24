@@ -16,7 +16,7 @@ namespace Symfony\Component\Serializer\Exception;
  */
 class MissingConstructorArgumentsException extends RuntimeException
 {
-    private string $missingArguments;
+    private array $missingArguments;
 
     public function __construct(string $message, $code = 0, Throwable $previous = null, array $missingArguments = [])
     {
